@@ -29,3 +29,19 @@ module: {
     },
 ```
 
+# cssNano
+Install cssNano
+```
+npm install cssnano --save-dev
+```
+Add plugins to post.config.js file
+```
+module.exports = {
+    plugins: [
+      require('autoprefixer'),
+      require('cssnano')({
+          preset: 'default',
+      }),
+    ],
+  }
+```
